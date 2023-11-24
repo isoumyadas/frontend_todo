@@ -23,6 +23,7 @@ function App() {
         setIsAuthenticated(true);
         setLoading(false);
       })
+      // eslint-disable-next-line no-unused-vars
       .catch((error) => {
         setUser({});
         setIsAuthenticated(false);
