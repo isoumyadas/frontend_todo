@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
@@ -8,7 +9,7 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { isAuthenticated, setIsAuthenticated, loading, setLoading } =
+  const { isAuthenticated, setIsAuthenticated, setLoading } =
     useContext(Context);
 
   const submitHandler = async (e) => {
